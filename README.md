@@ -5,6 +5,7 @@ The purpose of this repository is to analyze credit card risk data from Lending 
 
 ## Resources
 Data: LoanStats_2019Q1.csv
+
 Software: jupyter notebook, python 3.7, Pandas, Collections, Numpy, sklearn, imblearn
 
 
@@ -43,7 +44,7 @@ Model Parameters:
 Model Results:
 - Balanced Acurracy Score: 66%
 
-- **Picture 2.1: SMOTE Sampling Confusion Matrix*
+- **Picture 2.1: SMOTE Sampling Confusion Matrix**
 
 ![SMOTE Sampling Confusion Matrix](https://github.com/joshuanallen/Credit_Risk_Analysis/blob/f1a2843f416ec869d229ba43e0e0f44c0ceef03e/images/2.1_SMOTE_confusion_matrix.png)
 
@@ -124,7 +125,7 @@ Model Results:
 
 
 ### Conclusions
-Evaluating the above supervised ML models to evaluate credit card risk data, we can conclude the most accurate model was the Easy Ensemble AdaBoost Classifier model using a linear regression fit with 100 estimators. The Easy Ensemble AdaBoost Classifier model had the highest balanced accuracy score with 93% compared to the next highest score for the Balanced Random Forest Classifier model at 79%.
+Evaluating the above supervised ML models to evaluate credit card risk data, we can conclude the **most accurate model was the Easy Ensemble AdaBoost Classifier model** using a linear regression fit with 100 estimators. The Easy Ensemble AdaBoost Classifier model had the highest balanced accuracy score with 93% compared to the next highest score for the Balanced Random Forest Classifier model at 79%. Additionally, the EEC model also out-performed well in prediction, recall, and f1 score for high-risk loans. Specifically for loan-risk evaluation, false positives, or wrongly predicting low risk ("1") when the actual loan is high-risk ("0"), is the prediction needed to be most accurate and the best performing model for this was also the EEC model. 
 
 ## Limitations of current script/ future improvements
 - To tune the models to produce more accurate predictions, we can add scaling to some of the data to eliminate more of the modeling variability using the `StandardScaler()` module.
